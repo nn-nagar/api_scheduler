@@ -16,7 +16,7 @@ def call_api(timestamp):
         result = subprocess.run(["curl", "-s", config.API_URL], capture_output=True, text=True)
 
         if result.returncode == 0:
-            log.info(f"{timestamp}: API Response - {result.stdout.strip()}")
+            log.info(f"{timestamp}: API Response :: IP - {result.stdout.strip()}")
         else:
             log.error(f"{timestamp}: API Call Failed - {result.stderr.strip()}")
 

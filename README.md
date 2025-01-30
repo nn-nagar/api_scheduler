@@ -112,8 +112,16 @@ The script generates logs in the api_scheduler.log file, including information a
 
 Example Log Entries:
 
-    2025-01-01 09:15:25: Successfully called API at ifconfig.co
-    2025-01-01 13:45:09: API Call Failed - Connection Timeout
+    2025-01-30 22:29:58,947 - INFO - Loaded 3 timestamps. Scheduling API calls...
+    2025-01-30 22:29:58,963 - INFO - Scheduling 1 API calls at 2025-01-30 22:32:23 (in 145.0 seconds)
+    2025-01-30 22:29:58,967 - INFO - Scheduling 1 API calls at 2025-01-30 22:33:09 (in 191.0 seconds)
+    2025-01-30 22:29:58,967 - INFO - Scheduling 1 API calls at 2025-01-30 22:34:00 (in 242.0 seconds)
+    2025-01-30 22:32:23,978 - INFO - Calling API at https://ifconfig.co for timestamp 22:32:23
+    2025-01-30 22:32:24,533 - INFO - 22:32:23: API Response IP - 2401:4900:1c19:4110:2925:d240:fdc:6243
+    2025-01-30 22:33:09,969 - INFO - Calling API at https://ifconfig.co for timestamp 22:33:09
+    2025-01-30 22:33:10,471 - INFO - 22:33:09: API Response IP - 2401:4900:1c19:4110:2925:d240:fdc:6243
+    2025-01-30 22:34:00,977 - INFO - Calling API at https://ifconfig.co for timestamp 22:34:00
+    2025-01-30 22:34:01,498 - INFO - 22:34:00: API Response IP - 2401:4900:1c19:4110:2925:d240:fdc:6243
 
 # 🔧 Customization
 
